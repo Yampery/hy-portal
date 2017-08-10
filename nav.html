@@ -1,0 +1,65 @@
+<% for(var i=0;i<list.length;i++){ %>
+	<% var item = list[i] %>
+	<%if(item.isDisplay === 'y'){%>
+	<li id="<%=item.identifiers%>"><%=item.navigationName%><% if(item.identifiers === 'solution') {%><div class="secondary_menu">
+		<div class="secondaryMenu_center">
+		<%for(var t=0;t<item.children.length;t++){%>
+			<%if(item.children[t].hotType === 1){%>
+				<%var navigationName=item.children[t].navigationName%>
+				<%var hotNewsId=item.children[t].newsId%>
+				<%if(item.children[t].description.indexOf('，') === -1){ %>
+					<% var description1=item.children[t].description.split(',')[0],description2=item.children[t].description.split(',')[1]%>
+				<%}else{%>
+					<% var description1=item.children[t].description.split('，')[0],description2=item.children[t].description.split('，')[1]%>
+				<%}%>
+				<%var imgUrl = config.imgFolder+item.children[t].imageUrl%>
+			<%}%>
+		<%}%>
+			<div class="left_part">
+				<div  class="img">
+					<img src="<%-imgUrl%>">
+					<p><%-navigationName%></p>
+				</div>
+				<span class="info">
+					<p><%-description1%>，</p>
+					<p><%-description2%></p>
+				</span>
+			</div>
+			<div class="right_part">
+				<% var main = item.children.splice(0,6),more = item.children%>
+				<ul>
+				<%for(var j=0;j<main.length;j++) {%>
+					<%var mainItem = main[j]%>
+					<li>
+						<% var onmouseoverStr = ["$('#"+item.identifiers+" .left_part .img img').attr('src', '"+config.imgFolder+mainItem.imageUrl+"')"] %>
+						<% onmouseoverStr.push("$('#"+item.identifiers+" .left_part .img p').text('"+mainItem.navigationName+"')")%>
+						<% onmouseoverStr.push("$('#"+item.identifiers+" .left_part .info p').eq(0).text('"+mainItem.description+"')")%>
+						
+						<a data-id="<%=mainItem.newsId%>" onmouseover="<%=onmouseoverStr.join(";")%>" ><%=mainItem.navigationName%></a>
+						<% if(mainItem.newsId === hotNewsId) { %>
+							<span style="font-size: 12px; color: red;">hot</span>
+						<% } %>
+					</li>
+				<% } %>
+				</ul>
+				<ul>
+					<%for(var k=0;k<more.length;k++) {%>
+						<%var moreItem = more[k]%>
+						
+						<% var onmouseoverStr = ["$('#"+item.identifiers+" .left_part .img img').attr('src', '"+config.imgFolder+moreItem.imageUrl+"')"] %>
+						<% onmouseoverStr.push("$('#"+item.identifiers+" .left_part .img p').text('"+moreItem.navigationName+"')")%>
+						<% onmouseoverStr.push("$('#"+item.identifiers+" .left_part .info p').eq(0).text('"+moreItem.description+"')")%>
+						
+						<li><a data-id="<%=moreItem.newsId%>" onmouseover="<%=onmouseoverStr.join(";")%>"><%=moreItem.navigationName%></a></li>
+						<% if(moreItem.newsId === hotNewsId) { %>
+							<span style="font-size: 12px; color: red;">hot</span>
+						<% } %>
+					<% } %>
+				</ul>
+			</div>
+		</div>								
+   </div> 
+   <% } %>
+   </li>
+   <%}%>
+<% } %>	
