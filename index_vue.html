@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>华遥空间</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/client.css">
+    <script src="scripts/lib/jquery.min.1.11.1.js"></script>
+</head>
+<!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
+<body class="hold-transition skin-blue sidebar-mini">
+<div id="app" class="wrapper">
+    <div class="header">
+        <div class="header_top">
+            <div class="top_center">
+                <div class="top_logo">
+					<span class="logo_img">
+						<img src="images/logo.png">
+					</span>
+                    <span class="logo_infor">
+						<p>体验地理信息价值</p>
+						<p>数据 · 软件 · 服务</p>
+					</span>
+                </div>
+            </div>
+        </div>
+        <!-- 导航菜单 -->
+        <div class="header_menu">
+            <div class="menu_center">
+                <div class="menu_logo">
+                    <img src="images/menu_logo.png">
+                </div>
+                <div class="menu_ul">
+                    <ul id="Menu">
+                        <menu-item :item="item" v-for="item in menuList"></menu-item>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <!-- Main content -->
+        <div class="content">
+            <iframe scrolling="yes" frameborder="0" style="width:100%;height:100%;min-height:200px;overflow:visible;background:#efefef;" :src="main"></iframe>
+        </div>
+        <!-- /.content -->
+    </div>
+</div>
+    <script src="scripts/lib/vue.min.js"></script>
+    <script src="scripts/lib/router.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

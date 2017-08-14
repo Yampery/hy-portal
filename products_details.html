@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>南方数码</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/client.css">
+</head>
+<body>
+	<div id="header">
+	<div class="header"> 
+		<div class="header_top">
+			<div class="top_center">
+				<div class="top_logo">
+					<span class="logo_img">
+						<img src="images/logo.png">
+					</span>
+					<span class="logo_infor">
+						<p>体验地理信息价值</p>
+						<p>数据 · 软件 · 服务</p>
+					</span>
+				</div>
+				<div class="top_search">
+					<div class="search_input">
+						<input type="text" name="" >
+						<span class="search_btn">
+							<img src="images/search_btn.png">
+						</span>
+						<span class="input_menu">
+				<!-- 			<a class="menu_list" href="">CASS</a>
+							<a>|</a>
+							<a class="menu_list" href="">iData</a>
+							<a>|</a>
+							<a class="menu_list" href="">BMF</a>
+							<a>|</a>
+							<a class="menu_list" href="">CMS</a>
+							<a>|</a>
+							<a class="menu_list" href="">不动产</a>
+							<a>|</a>
+							<a class="menu_list" href="">在线客服</a> -->
+						</span> 
+					</div>
+					<div class="search_select">
+						<p class="select_name">员工通道</p>
+						<span class="select_btn">
+						 	<img src="images/select_btn.png">
+						</span>
+						<span class="select_option">
+						 	<ul>
+						 		<li onclick="javascript:window.open('http://mail.southgis.com/');">企业邮箱</li>
+						 		<li>知识共享平台</li>
+						 	</ul>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="header_menu">
+		    <div class="menu_center">
+		    <div class="menu_logo"> 
+		    	<img src="images/menu_logo.png">
+			</div>
+			<div class="menu_ul">
+				<ul id="Menu">
+				</ul>  
+			</div>	
+			<div class="menu_search">						 
+				<span class="menu_search_btn" style=""> 
+				</span>
+				<input type="text" name="" class="menu_search_input">
+			</div>
+			</div> 
+		</div>	 
+	</div>
+</div>
+
+	<div class="page fix technicalServices productDetails">
+		 <div class="content fix">
+			<ol class="breadcrumb">
+	          <li><a id="indexPage">首页</a></li>
+	          <li><a id="parentPage">产品</a></li>
+	          <li class="active" id="currentPage">加载中<span class="dotting"></span></li>
+	        </ol>
+	        <div class="slidebar" id="slide" data-toggle=0>
+	            <p class="menu-icon"></p>
+	            <ul class="first-menu">
+                    <li class="first-menu-li" data-open=0>
+                      	加载中<span class="dotting"></span>
+                    </li>
+                    <li class="first-menu-li" data-open=0>
+                     	加载中<span class="dotting"></span>
+                    </li>
+	            </ul>
+	        </div>
+			<div class="content_box">
+				<div class="loadEffect" id="loading">
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				</div>
+				<!-- <div class="title">
+					<p id="newsTitle">iMap</p>
+					<p id="pushTime">发布时间：2014-7-24 13:59:49</p>
+				</div>
+				<div id="newsContent" class="newsContent">
+					<div class="text">
+						<div class="text_list isStrat"> 
+						iMap平台根据用户需求和服务模式，分别建立不同版本地理信息公共服务平台来面向不同用户进行服务。平台主要包括门户网站系统、共享服务系统、运维管理系统、数据库管理系统四个子系统。
+						</div>
+						<div class="text_list"> 
+						目前，平台包括两个版本，分别是高级版和标准版。
+						</div>
+						<div class="text_list"> 
+						<a class="istitle">高级版：</a>采用ArcGIS、Oracle作为基础GIS平台和数据库平台，具有功能齐全、性能优秀等特点。
+						</div>
+						<div class="text_list"> 
+						<a class="istitle">标准版：</a>采用自主研发技术，无需商用GIS和数据库平台支持，实现服务发布、管理、监控、与国家天地图无缝对接等功能。
+						</div>
+					</div>
+					<div class="text_img">
+						<img src="images/product_details/text_img.png">
+					 	<p>iMap总体架构图</p>
+					</div>
+					<div class="system_list">
+						<div class="list_text">
+							<div class="list_text_part"> 
+								<p class="list_title isStrat">门户网站系统</p>
+								<p class="isStrat list_content">
+								门户网站系统包括新闻网站和电子地图，其中新闻网站主要提供平台新闻相关信息，提供热点服务和最新服务信息的公告，电子地图主要用于展现平台的服务资源，如线划地图、影像地图、地名地址、路网等。
+								</p>
+							</div>
+							<div class="list_text_part"> 
+								<p class="list_title isStrat">共享服务系统</p>
+								<p class="isStrat list_content">
+								共享服务系统采用面向服务的体系架构（SOA）设计理念，以服务的方式对外提供地理信息服务，从而达到数据管理和应用的分离，实现地理信息服务共享。服务系统主要展示平台中提供的各种服务。用户可以在服务系统中申请需要使用的服务，查询自己注册的服务。同时服务系统提供开发指南、开发手册、开发示例方便平台二次开发人员迅速掌握二次开发接口内容
+								</p>
+							</div>
+						</div>
+						 
+						<div class="list_img">
+							<img src="images/product_details/list_img.png">
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="case_list">
+					<div class="case_list_title">
+						<img src="images/shu.png"><a>典型案例</a>
+					</div>
+
+					<div class="case_list_content">
+						<span class="case_img">
+							<img src="images/product_details/case_img.png">
+						</span>
+						<span class="case_text">
+							<p class="case_text_title">绍兴市地理空间信息共享平台</p>
+							<p class="isStrat">项目开发完成了数据共享服务子系统、资源展示子系统、数据库管理子系统、运维支撑子系统，系统集海量数据管理、网络空间信息共享、服务管理和后台日志监控以及资源展示应用等功能于一体，全面考虑效率、高并发、稳定、安全、开发等因素，为全市统一搭建基础空间数据库共享服务平台，为政府各部门提供高效、安全、可靠的基础空间数据库应用服务。<a>项目在2012年度中国地理信息产业优秀工程评选中获得GIS优秀工程铜奖。</a></p>
+						</span>	
+					</div>
+
+					<div class="case_list_content">
+						<span class="case_img">
+							<img src="images/product_details/case_img_two.png">
+						</span>
+						<span class="case_text">
+							<p class="case_text_title">湘潭市地理空间框架公共平台项目</p>
+							<p class="isStrat">湘潭市地理空间框架公共服务平台是湘潭市人民政府启动的“数字湘潭地理空间框架”项目的重要组成部分。项目建设是为了实现市各级部门间的地理信息数据共享和高效利用，消除信息孤岛，减少信息化建设中的重复投入，以更好地服务经济社会发展，从而建立全市统一的、权威的、唯一的地理信息公共平台，从而满足湘潭市各部门、企业单位、个人对地理信息的旺盛的需求</p>
+						</span>	
+					</div>
+
+					<div class="case_list_content">
+						<span class="case_img">
+							<img src="images/product_details/case_img_three.png">
+						</span>
+						<span class="case_text">
+							<p class="case_text_title">长沙市地理信息公共服务平台及应用系统开发建设项目</p>
+							<p class="isStrat">长沙市地理信息公共服务平台及应用系统开发建设是长沙市人民政府启动的“数字长沙地理空间框架”项目的重要组成部分。项目建设是为了进一步规范长沙市地理信息产业，加强资源共建共享、避免重复建设，而建立的全市统一、权威的地理信息公共平台，从而满足长沙市各部门、企业单位、个人对地理信息的旺盛的需求。</p>
+						</span>	
+					</div>
+				</div>
+				<div class="more_case">
+					<ul>
+						<li>
+						 <span><img src="images/dian.png"></span>
+						 <p><a>云南省地理信息公共服务平台及应用示范项目</a></p>
+						</li>
+						<li>
+						 <span><img src="images/dian.png"></span>
+						 <p><a>数字舟山地理空间框架建设</a></p>
+						</li>
+						<li>
+						 <span><img src="images/dian.png"></span>
+						 <p><a>数字玉溪地理空间框架建设”国土资源与公共服务应用示范系统</a></p>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="footer"> 
+		<div class="footer_center">
+			<div class="footer_top">
+				<div class="left_list">
+					<ul>
+						<li>关于我们</li>
+						<li><a>企业简介</a></li>
+						<li><a>资质荣誉</a></li>
+						<li><a>企业文化</a></li>
+						<li><a>发展历程</a></li>
+						<li><a>投资者关系</a></li>
+						<li><a>联系我们</a></a></li>
+					</ul>
+					<ul>
+						<li>技术服务</li>
+						<li><a>全国网点</a></li>
+						<li><a>在线反馈</a></li>
+						<li><a>运维中心</a></li>
+						<li><a>常见问题</a></li>
+						<li><a>软件下载</a></li>
+						<li><a>其他下载</a></li>	
+					</ul>
+					<ul>
+						<li>加入我们</li>
+						<li><a>员工发展体系</a></li>
+						<li><a>校园招聘</a></li>
+						<li><a>社会招聘</a></li>
+						<li><a>精彩生活</a></li>
+					</ul>
+				</div>
+				<div class="right_list">
+
+					<span class="right_infor">
+						<!-- <p>服务热线 :</p>
+						<p class="tel">400-606-9090</p> -->
+						<p class="address">地址：广州市天河区科韵路26号测绘大厦四楼 </p>
+						<p>电话：020-23380999  传真：020-85529456</p>
+					</span>
+
+					 
+					<div class="right_Qrcode">
+						<span class="Qrimg"><img src="images/Qrcode_two.png"></span>
+						<p class="Qrinfor">【GIS圈】</p>
+					</div>
+					<div class="right_Qrcode">
+						<span class="Qrimg"><img src="images/Qrcode_one.png"></span>
+						<p class="Qrinfor">【微信公众号】</p>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="footer_bottom">
+				<a>© 2003—2017广东南方数码科技股份有限公司版权所有 粤ICP备12038256号</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="scripts/lib/jquery.min.1.11.1.js"></script>
+
+    <script src="scripts/lib/plugins.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+    <script data-main="scripts/product_details/main" src="scripts/lib/require.js"></script>
+</body>
+</html>

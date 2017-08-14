@@ -11269,3 +11269,7 @@ th {
 	border: none;
 	padding: initial
 }
+
+.wrapper { height: 100%; width: 100%; overflow: hidden; }
+.main-body { height: 100%; width: 100%; }
+.content { height: 100%; width: 100%; }
