@@ -10089,7 +10089,7 @@ th {
 	background-color: #fff;
 	padding: 35px;
 	margin-bottom: 40px;
-	box-shadow: 0 4px 8px rgba(13, 5, 9, 0.2);
+	box-shadow: 0 1px 1px rgba(13, 5, 9, 0.2);
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 	box-sizing: border-box
@@ -11283,3 +11283,19 @@ th {
 }
 .main-body { height: 100%; width: 100%; }
 .content { height: 100%; width: 100%; }
+
+/* 公司简介 */
+#news-content .title {
+	margin: 0 auto;
+}
+.news-title {
+	text-align: center;
+	font-size: 24px;
+	color: #005bac;
+	font-weight: bold;
+}
+
+
+.text-cont {
+	font-size:10.5pt;font-family:Calibri, sans-serif;color:#313131;background-color:#FFFFFF;text-indent:24pt;font-weight: bold
+}

@@ -62,12 +62,14 @@
     color: #005bac;
 }
 
-#news-content{
+/*#news-content{
 	display: none;
-}
+}*/
 
 .news-article{
     padding-top: 30px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .news-meta{
