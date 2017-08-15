@@ -8,37 +8,33 @@
 .secondary_menu .secondaryMenu_center .right_part ul li{
 	min-width: 200px;
 }
-.header .header_top .top_center .top_logo .logo_infor{
+.header_top .top_logo .logo_infor{
     width: 180px;
     float: left;
     line-height: 25px;
 }
 
-.header .header_menu .menu_center .menu_ul ul li .secondary_menu{
+ .menu_ul ul li .secondary_menu{
 	display: none;
 	margin-top: -1px;
 	z-index: 999;
 }
-.header .header_menu .menu_center .menu_ul ul li:hover .secondary_menu{
+ .menu_ul ul li:hover .secondary_menu{
 	display: block;
 }
-.header .header_menu .menu_center .menu_ul ul li:hover .secondary_menu a{
+ .menu_ul ul li:hover .secondary_menu a{
     text-decoration: none;
 }
-.header_menu{
-	/* display: none; */
-}
 
-.header .header_menu{
+.header_menu{
 	z-index: 999!important;
 }
-.header .header_menu .menu_center .menu_ul{
-	width: 750px;
+
+.header_menu .menu_center{
+	width: 800px;
+    float:right;
 }
-.header .header_menu .menu_center{
-	width: 1250px;
-}
-.header .header_top .top_center .top_search .search_input .input_menu a{
+.header_top .top_search .search_input .input_menu a{
 	cursor: pointer;
 }
 

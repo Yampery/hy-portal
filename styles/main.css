@@ -8610,71 +8610,77 @@ th {
 	box-sizing: border-box
 }
 
-.header {
+ {
 	min-width: 1200px;
 	width: 100%;
 	background-color: #fff
 }
 
-.header .header_top {
+ .header_top {
 	height: 100px;
 	width: 100%;
 	margin: 0 auto;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #3879D9;
 	position: relative;
 	z-index: 3
 }
 
-.header .header_top .top_center {
+ /*.header_top {
 	height: 100%;
 	width: 1200px;
 	margin: 0 auto
-}
+}*/
 
-.header .header_top .top_center .top_logo {
+ .header_top .top_logo {
 	height: 100%;
 	width: 390px;
-	float: left
+	float: left;
+	 margin-left: 150px;
 }
 
-.header .header_top .top_center .top_logo .logo_img {
+ .header_top .top_logo .logo_img {
 	width: 110px;
 	height: 100%;
 	float: left
 }
 
-.header .header_top .top_center .top_logo .logo_infor {
+.header_top .top_logo .logo_img img {
+	width: 90px;
+	height: 90px;
+}
+
+ .header_top .top_logo .logo_infor {
 	width: 255px;
 	height: 70px;
 	padding-top: 30px;
 	float: right
 }
 
-.header .header_top .top_center .top_logo .logo_infor p {
+ .header_top .top_logo .logo_infor p {
 	font-size: 14px;
 	color: #666;
 	text-align: center
 }
 
-.header .header_top .top_center .top_logo .logo_infor p a {
+ .header_top .top_logo .logo_infor p a {
 	font-size: 18px;
 	color: #333
 }
 
-.header .header_top .top_center .top_search {
+ .header_top .top_search {
 	height: 80px;
 	width: 490px;
 	padding-top: 20px;
 	float: right
 }
 
-.header .header_top .top_center .top_search .search_input {
+ .header_top .top_search .search_input {
 	height: 100%;
 	width: 340px;
 	float: left
 }
 
-.header .header_top .top_center .top_search .search_input input {
+ .header_top .top_search .search_input input {
 	width: 278px;
 	height: 40px;
 	line-height: 40px;
@@ -8685,18 +8691,18 @@ th {
 	box-sizing: border-box
 }
 
-.header .header_top .top_center .top_search .search_input .search_btn {
+ .header_top .top_search .search_input .search_btn {
 	float: left;
 	height: 40px;
 	width: 50px;
 	cursor: pointer
 }
 
-.header .header_top .top_center .top_search .search_input .search_btn:hover {
+ .header_top .top_search .search_input .search_btn:hover {
 	opacity: 0.8
 }
 
-.header .header_top .top_center .top_search .search_input .input_menu {
+ .header_top .top_search .search_input .input_menu {
 	height: 32px;
 	width: 96%;
 	line-height: 32px;
@@ -8705,25 +8711,25 @@ th {
 	padding-left: 12px;
 }
 
-.header .header_top .top_center .top_search .search_input .input_menu a {
+ .header_top .top_search .search_input .input_menu a {
 	float: left;
 	color: #bebebe;
 	margin-left: 9px;
 	margin-right: 9px
 }
 
-.header .header_top .top_center .top_search .search_input .input_menu .menu_list {
+ .header_top .top_search .search_input .input_menu .menu_list {
 	height: 32px;
 	float: left;
 	color: #bebebe;
 	margin: 0px
 }
 
-.header .header_top .top_center .top_search .search_input .input_menu .menu_list:hover {
+ .header_top .top_search .search_input .input_menu .menu_list:hover {
 	color: #666
 }
 
-.header .header_top .top_center .top_search .search_select {
+ .header_top .top_search .search_select {
 	height: 40px;
 	width: 120px;
 	float: right;
@@ -8731,7 +8737,7 @@ th {
 	position: relative
 }
 
-.header .header_top .top_center .top_search .search_select .select_name {
+ .header_top .top_search .search_select .select_name {
 	width: 80px;
 	height: 40px;
 	float: left;
@@ -8741,14 +8747,14 @@ th {
 	color: #fff
 }
 
-.header .header_top .top_center .top_search .search_select .select_btn {
+ .header_top .top_search .search_select .select_btn {
 	width: 40px;
 	height: 40px;
 	float: right;
 	cursor: pointer
 }
 
-.header .header_top .top_center .top_search .search_select .select_option {
+ .header_top .top_search .search_select .select_option {
 	width: 120px;
 	left: 0px;
 	top: 40px;
@@ -8757,7 +8763,7 @@ th {
 	background-color: #1a1f25
 }
 
-.header .header_top .top_center .top_search .search_select .select_option li {
+ .header_top .top_search .search_select .select_option li {
 	height: 40px;
 	width: 105px;
 	padding-left: 15px;
@@ -8768,15 +8774,15 @@ th {
 	cursor: pointer
 }
 
-.header .header_top .top_center .top_search .search_select .select_option li:last-child {
+ .header_top .top_search .search_select .select_option li:last-child {
 	border: none
 }
 
-.header .header_top .top_center .top_search .search_select .select_option li:hover {
+ .header_top .top_search .search_select .select_option li:hover {
 	color: #eee
 }
 
-.header .header_menu {
+ .header_menu {
 	height: 55px;
 	width: 100%;
 	z-index: 2;
@@ -8784,61 +8790,60 @@ th {
 	box-shadow: 0 2px 8px rgba(13, 5, 9, 0.2)
 }
 
-.header .header_menu .menu_center {
-	width: 1200px;
-	height: 100%;
-	margin: 0 auto
-}
-
-.header .header_menu .menu_center .menu_logo {
+ .menu_logo {
 	width: 200px;
 	height: 100%;
 	float: left;
 	visibility: hidden
 }
 
-.header .header_menu .menu_center .menu_logo img {
+ .menu_logo img {
 	margin-top: 13px;
 	margin-left: 15px
 }
 
-.header .header_menu .menu_center .menu_ul {
-	width: 740px;
-	height: 100%;
-	float: left
+.menu_ul {
+	width: 650px;
+	float: left;
+ 	margin-left: 50px;
+	 margin-top: 50px;
 }
 
-.header .header_menu .menu_center .menu_ul ul {
+ .menu_ul ul {
 	width: 100%;
-	height: 55px
+	height: 45px
 }
 
-.header .header_menu .menu_center .menu_ul ul li {
+ .menu_ul ul li {
 	/* width: 80px; */
-	height: 55px;
+	height: 45px;
 	float: left;
 	line-height: 55px;
 	text-align: center;
 	color: #666;
 	font-size: 18px;
 	cursor: pointer;
-	margin-left: 20px;
-	margin-right: 20px
+	margin-left: 40px;
+	/*margin-right: 20px*/
 }
 
-.header .header_menu .menu_center .menu_ul ul li:hover {
+ .menu_ul ul li:hover {
+	color: #005bac;
+	border-bottom: 4px solid #005bac;
+	box-sizing: border-box;
+ }
+
+.menu_ul ul a:hover {
+	text-decoration: none;
+}
+
+ .menu_ul ul li.on {
 	color: #005bac;
 	border-bottom: 4px solid #005bac;
 	box-sizing: border-box
 }
 
-.header .header_menu .menu_center .menu_ul ul li.on {
-	color: #005bac;
-	border-bottom: 4px solid #005bac;
-	box-sizing: border-box
-}
-
-.header .header_menu .menu_center .menu_ul ul .secondary_menu {
+ .menu_ul ul .secondary_menu {
 	width: 100%;
 	height: 300px;
 	background-color: #eeeeee;
@@ -8848,7 +8853,7 @@ th {
 	box-shadow: 0px 3px 10px #959595 inset
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center {
+ .menu_ul ul .secondary_menu .secondaryMenu_center {
 	width: 1200px;
 	height: 250px;
 	padding-top: 25px;
@@ -8856,14 +8861,14 @@ th {
 	margin: 0 auto
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part {
 	height: 100%;
 	width: 300px;
 	float: left;
 	margin-right: 10px
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img {
 	height: 200px;
 	width: 100%;
 	float: left;
@@ -8871,12 +8876,12 @@ th {
 	cursor: pointer
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img img {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img img {
 	width: 100%;
 	height: 100%
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img p {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .img p {
 	position: absolute;
 	bottom: 0px;
 	height: 50px;
@@ -8888,7 +8893,7 @@ th {
 	font-size: 18px
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .info {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .info {
 	height: 40px;
 	width: 100%;
 	float: left;
@@ -8898,12 +8903,12 @@ th {
 	line-height: normal
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .info p {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .left_part .info p {
 	text-align: left;
 	padding-left: 52px
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .right_part {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .right_part {
 	height: 100%;
 	width: 890px;
 	float: left;
@@ -8911,14 +8916,14 @@ th {
 	color: #666666
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul {
 	height: 100%;
 	width: 220px;
 	margin-left: 60px;
 	float: left
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li {
 	width: auto;
 	float: left;
 	margin: 0px;
@@ -8927,16 +8932,16 @@ th {
 	text-align: left
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li a:hover {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li a:hover {
 	color: #005bac;
 	border-bottom: 2px solid #97aecf
 }
 
-.header .header_menu .menu_center .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li:hover {
+ .menu_ul ul .secondary_menu .secondaryMenu_center .right_part ul li:hover {
 	border: none
 }
 
-.header .header_menu .menu_center .menu_search {
+ .menu_search {
 	width: 260px;
 	height: 100%;
 	float: right;
@@ -8944,11 +8949,11 @@ th {
 	position: relative
 }
 
-.header .header_menu .menu_center .menu_search .ishover {
+ .menu_search .ishover {
 	background-image: url(../images/menu_search2.png)
 }
 
-.header .header_menu .menu_center .menu_search input {
+ .menu_search input {
 	width: 208px;
 	height: 42px;
 	margin-top: 5px;
@@ -8963,7 +8968,7 @@ th {
 	box-sizing: border-box
 }
 
-.header .header_menu .menu_center .menu_search span {
+ .menu_search span {
 	position: absolute;
 	height: 42px;
 	width: 40px;
@@ -8979,7 +8984,7 @@ th {
 	box-sizing: border-box
 }
 
-.header .header_menu .menu_center .menu_search span img {
+ .menu_search span img {
 	margin-top: 7px
 }
 
@@ -9121,7 +9126,7 @@ th {
 }
 
 #scrollUp {
-	bottom: 15px;
+	bottom: 80px;
 	right: 15px;
 	width: 100px;
 	height: 100px;
@@ -11270,6 +11275,11 @@ th {
 	padding: initial
 }
 
-.wrapper { height: 100%; width: 100%; overflow: hidden; }
+.wrapper {
+	height: 100%;
+	width: 100%;
+	overflow-y: hidden;
+	min-width: 1200px;
+}
 .main-body { height: 100%; width: 100%; }
 .content { height: 100%; width: 100%; }

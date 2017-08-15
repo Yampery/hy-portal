@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="styles/client.css">
 </head>
 <body>
-<div id="banner1">
-
-</div>
 <div class="content">
     <div class="bg-img"></div>
     <ul class="service fix">
@@ -94,8 +91,72 @@
             </ul>
         </div>
     </div>
-    <div id="banner2" class="bottom-banner">
+
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer_top">
+                <div class="left_list">
+                    <ul>
+                        <li id="aboutUs">关于我们</li>
+                        <li id="details"><a>企业简介</a></li>
+                        <li><a href="aboutUs_details.html?type=companyProfile">资质荣誉</a></li>
+                        <li><a href="aboutUs_news.html?type=honors">企业文化</a></li>
+                        <li><a href="aboutUs_details.html?type=development">发展历程</a></li>
+                        <li><a href="aboutUs_details.html?type=investor">投资者关系</a></li>
+                        <li><a href="aboutUs_details.html?type=contactUs">联系我们</a></a></li>
+                    </ul>
+                    <ul>
+                        <li>技术服务</li>
+                        <li><a>全国网点</a></li>
+                        <li><a>在线反馈</a></li>
+                        <li><a>运维中心</a></li>
+                        <li><a>常见问题</a></li>
+                        <li><a>软件下载</a></li>
+                        <li><a>其他下载</a></li>
+                    </ul>
+                    <ul>
+                        <li>加入我们</li>
+                        <li><a>员工发展体系</a></li>
+                        <li><a>校园招聘</a></li>
+                        <li><a>社会招聘</a></li>
+                        <li><a>精彩生活</a></li>
+                    </ul>
+                </div>
+                <div class="right_list">
+
+					<span class="right_infor">
+						<p class="address">地址：广西省南宁市良庆区五象大道440号金谷山庄北二里4-2号 </p>
+                        <br><br>
+						<p>电话：0771-2867671  传真：020-85529456</p>
+					</span>
+
+
+                    <div class="right_Qrcode">
+                        <span class="Qrimg"><img src="images/Qrcode_two.png"></span>
+                        <p class="Qrinfor">【GIS圈】</p>
+                    </div>
+                    <div class="right_Qrcode">
+                        <span class="Qrimg"><img src="images/Qrcode_one.png"></span>
+                        <p class="Qrinfor">【微信公众号】</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footer_bottom">
+                <a>copyright © 2016-2018 广西华遥空间信息科技有限公司</a>
+            </div>
+        </div>
     </div>
 </div>
+<script src="scripts/lib/jquery.min.1.11.1.js"></script>
+<script src="scripts/lib/plugins.js"></script>
+<script src="scripts/scroll.js"></script>
+<script>
+    $(".left_list li").click(function () {
+        var value = $(this).attr("id");
+        parent.vm.main = value + ".html";
+    });
+</script>
 </body>
 </html>
