@@ -11286,6 +11286,7 @@ th {
 
 /* 公司简介 */
 #news-content .title {
+	width: 700px;
 	margin: 0 auto;
 }
 .news-title {
@@ -11295,6 +11296,11 @@ th {
 	font-weight: bold;
 }
 
+/* 二级标题 */
+.second-title {
+	color: #888888;
+	font-size: 20px;
+}
 
 .text-cont {
 	font-size:10.5pt;font-family:Calibri, sans-serif;color:#313131;background-color:#FFFFFF;text-indent:24pt;font-weight: bold
