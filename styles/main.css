@@ -9376,7 +9376,7 @@ th {
 
 .content .article-img {
 	width: 800px;
-	height: 550px;
+	/*height: 550px;*/
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 8px rgba(13, 9, 5, 0.2)
 }
@@ -9386,7 +9386,7 @@ th {
 }
 
 .content .article {
-	margin-top: 35px;
+	margin-top: 15px;
 	background-color: #fff;
 	width: 800px;
 	height: 240px;
@@ -9411,7 +9411,7 @@ th {
 	font-weight: normal;
 	font-size: 24px;
 	color: #333;
-	margin: 20px 0 30px 0
+	margin: 0px 0 30px 0
 }
 
 .content .article .arc_content {
@@ -11320,6 +11320,12 @@ th {
 
 /*解决方案*/
 #Solution {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#Main {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
