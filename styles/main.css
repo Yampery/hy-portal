@@ -11317,3 +11317,10 @@ th {
 .text-cont {
 	font-size:10.5pt;font-family:Calibri, sans-serif;color:#313131;background-color:#FFFFFF;text-indent:24pt;font-weight: bold
 }
+
+/*解决方案*/
+#Solution {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
