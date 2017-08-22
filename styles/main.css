@@ -11300,6 +11300,8 @@ th {
 #news-content .title {
 	width: 700px;
 	margin: 0 auto;
+	padding-bottom: 25px;
+	border-bottom: 1px dashed #bebebe;
 }
 .news-title {
 	text-align: center;
@@ -11326,6 +11328,12 @@ th {
 }
 
 #Main {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#Details {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
