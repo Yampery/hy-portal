@@ -50,7 +50,7 @@ var vm = new Vue({
             [{ "menuId": "main", "name": "主页", "open": "y", "url": "main.html" }
             ,{ "menuId": "products", "name": "产品", "open": "", "url": "products.html" }
             ,{ "menuId": "solution", "name": "解决方案", "open": "", "url": "solution.html" }
-            ,{ "menuId": "technicalService", "name": "技术服务", "open": "", "url": "technicalService.html" }
+            /*,{ "menuId": "technicalService", "name": "技术服务", "open": "", "url": "technicalService.html" }*/
             ,{ "menuId": "talent", "name": "人才招聘", "open": "", "url": "talent.html" }
             ,{ "menuId": "aboutUs", "name": "关于我们", "open": "", "url": "aboutUs.html" }],
         main:"main.html",

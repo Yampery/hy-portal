@@ -8823,7 +8823,7 @@ th {
 	color: #666;
 	font-size: 18px;
 	cursor: pointer;
-	margin-left: 40px;
+	margin-left: 45px;
 	/*margin-right: 20px*/
 }
 
@@ -9078,6 +9078,10 @@ th {
 	height: 140px;
 	width: 140px;
 	float: left
+}
+.footer .footer_center .footer_top .right_list .right_Qrcode .Qrimg img {
+	height: 140px;
+	width: 140px;
 }
 
 .footer .footer_center .footer_top .right_list .right_Qrcode .Qrinfor {
@@ -10864,12 +10868,6 @@ th {
 	width: 500px;
 }
 
-#Products {
-	width: 1200px;
-	margin: 0 auto;
-	position: relative;
-}
-
 .products .fl {
 	width: 500px;
 	margin-right: 40px
@@ -11321,19 +11319,25 @@ th {
 }
 
 /*解决方案*/
-#Solution {
+#Solution_content {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#Main {
+#Main_content {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#Details {
+#Details_content {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#Products_content {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;

@@ -18,3 +18,8 @@ $(function () {
         $('.returnTop span').css('top', 'auto');
     });
 });
+
+$(".left_list li").click(function () {
+    var value = $(this).attr("id");
+    parent.vm.main = value + ".html";
+});
