@@ -21,5 +21,24 @@ $(function () {
 
 $(".left_list li").click(function () {
     var value = $(this).attr("id");
-    parent.vm.main = value + ".html";
+    if (!isNull(value))
+        parent.vm.main = value + ".html";
 });
+
+/**
+ * 判断是参数否为""/空格/undefined/null
+ * @param arg1
+ * @returns
+ */
+function isNull(str){
+    var isNull = false;
+    if (null == str || !str)
+        isNull = true;
+    else if("" == str || 1 > str.length) {
+        isNull = true;
+    }
+    else if(null == JSON.stringify(str))
+        isNull = true;
+
+    return isNull;
+}

@@ -11342,3 +11342,52 @@ th {
 	margin: 0 auto;
 	position: relative;
 }
+
+.ban_mation{
+	position:absolute;
+	left: 10%;
+	top:70px;
+	color: #fff;
+}
+.ban_mation_p1{
+	font-size: 40px;
+	font-weight: bold;
+}
+.ban_mation_p2{
+	font-size: 33px;
+	margin-bottom: 5px;
+}
+.ban_mation_p3{
+	font-size: 18px;
+}
+.ban_mation a{
+	color: #FFFFFF;
+	display: block;
+	margin-top: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.c_blue,.ban_mation a.c_blue{
+	color: #004ea2;
+}
+
+#Main_content .title {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #666;
+	position: relative;
+	padding-left: 13px
+}
+
+#Main_content .image_part1 li {
+	float: left;
+	height: auto
+}
+
+#Main_content .imgBox .imgBoxTxt {
+	font-size: 1rem;
+	line-height: 23px;
+	margin: 0px 20px;
+	height: 130px;
+}

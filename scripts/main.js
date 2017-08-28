@@ -1,6 +1,6 @@
 $(function () {
     // 根据boxList数据生成li
-    for (var i = 0; i < boxList.length; i++) {
+   /* for (var i = 0; i < boxList.length; i++) {
         var item = boxList[i];
         var li = ['<li>',
             '    <a>',
@@ -26,7 +26,7 @@ $(function () {
     }).mouseleave(function () {
         var index = $(this).index();
         $(this).find('.item-icon').css('background-image','url(\'uploadfiles/' + boxList[index].iconDefault + '\')');
-    });
+    });*/
 });
 
 var boxList = [
