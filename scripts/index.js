@@ -52,12 +52,13 @@ var vm = new Vue({
             ,{ "menuId": "solution", "name": "解决方案", "open": "", "url": "solution.html" }
             /*,{ "menuId": "technicalService", "name": "技术服务", "open": "", "url": "technicalService.html" }*/
             ,{ "menuId": "talent", "name": "人才招聘", "open": "", "url": "talent.html" }
-            ,{ "menuId": "aboutUs", "name": "关于我们", "open": "", "url": "aboutUs.html" }],
+            /*,{ "menuId": "aboutUs", "name": "关于我们", "open": "", "url": "aboutUs.html" }*/],
         main:"main.html",
     },
 });
 
 $(".menu_ul li").click(function () {
     var value = $(this).attr("id");
+    // $(this).siblings().attr("color", "#337ab7")
     vm.main = value + ".html";
 });

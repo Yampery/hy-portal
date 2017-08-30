@@ -9,7 +9,7 @@
 	min-width: 200px;
 }
 .header_top .top_logo .logo_infor{
-    width: 180px;
+    width: 300px;
     float: left;
     line-height: 25px;
 }
@@ -245,10 +245,10 @@ body,html{
 	top: 13px;
 	right: 8px;
 }
-.slidebar .first-menu-li a:link, a:visited {
+/*.slidebar .first-menu-li a:link, a:visited {
  text-decoration: none;
  color:#666;
-}
+}*/
 /* æ–‡ç« è¯¦æƒ… */
 .solutionDetails .content .content_box{
     min-height: 500px;

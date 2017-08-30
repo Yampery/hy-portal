@@ -1,10 +1,9 @@
 $(function () {
-
     // 返回顶部
-    $.scrollUp({
+   /* $.scrollUp({
         animation: 'fade',
         activeOverlay: '#0078D7'
-    });
+    });*/
     $('.returnTop').on('click', function () {
         var speed = 200;
         $('body,html').animate({ scrollTop: 0 }, speed);
@@ -19,6 +18,7 @@ $(function () {
     });
 });
 
+// 页面底部li点击事件
 $(".left_list li").click(function () {
     var value = $(this).attr("id");
     if (!isNull(value))
